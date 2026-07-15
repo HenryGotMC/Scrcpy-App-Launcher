@@ -18,7 +18,7 @@ if ($missing.Count -gt 0) {
 }
 
 $startMenu = [Environment]::GetFolderPath("Programs")
-$shortcutPath = Join-Path $startMenu "Scrcpy Manga-Shows.lnk"
+$shortcutPath = Join-Path $startMenu "Scrcpy App Launcher.lnk"
 
 $shell = New-Object -ComObject WScript.Shell
 $shortcut = $shell.CreateShortcut($shortcutPath)
@@ -28,5 +28,5 @@ $shortcut.WorkingDirectory = $scriptDir
 $shortcut.Description = "Launch scrcpy for manga reading or show watching"
 $shortcut.Save()
 
-Write-Host "Installed. Search for 'Scrcpy Manga-Shows' in the Start Menu."
+Write-Host "Installed. Search for 'Scrcpy App Launcher' in the Start Menu."
 Write-Host "Edit profiles.conf (in the repo root) to add your own resolutions and app package names."

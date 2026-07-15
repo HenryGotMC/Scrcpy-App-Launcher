@@ -22,7 +22,7 @@ chmod +x "$LAUNCHER_SCRIPT"
 mkdir -p "$DESKTOP_DIR"
 cat > "$DESKTOP_FILE" <<EOF
 [Desktop Entry]
-Name=Scrcpy Manga/Shows
+Name=Scrcpy App Launcher
 Comment=Launch scrcpy for manga reading or show watching
 Exec="$LAUNCHER_SCRIPT"
 Icon=scrcpy
@@ -33,5 +33,5 @@ EOF
 
 command -v update-desktop-database >/dev/null 2>&1 && update-desktop-database "$DESKTOP_DIR"
 
-echo "Installed. Look for 'Scrcpy Manga/Shows' in your application launcher."
+echo "Installed. Look for 'Scrcpy App Launcher' in your application launcher."
 echo "Edit $SCRIPT_DIR/../profiles.conf to add your own resolutions and app package names."

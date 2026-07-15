@@ -2,10 +2,9 @@
 
 A tiny menu launcher for [scrcpy](https://github.com/Genymobile/scrcpy) that opens a secondary virtual display on your Android device at a preset resolution and automatically launches a manga or anime app into it.
 
-Pick a mode from a popup menu, built from a `profiles.conf` file you can freely edit — add as many entries as you like, each with its own resolution and app to auto-launch. Ships with two example profiles:
+Pick a mode from a popup menu, built from a `profiles.conf` file you can freely edit — add as many entries as you like, each with its own resolution and app to auto-launch. Ships with one example profile:
 
 - **Manga** — opens a 720x1440 portrait virtual display and launches YouTube
-- **Shows** — opens a 2560x1440 landscape virtual display and launches Netflix
 
 Available for both Linux and Windows 11.
 
@@ -26,7 +25,7 @@ cd Scrcpy-App-Launcher/linux
 ./install.sh
 ```
 
-This checks for `scrcpy`, `adb`, and `zenity`, then creates a "Scrcpy Manga/Shows" entry in your application launcher.
+This checks for `scrcpy`, `adb`, and `zenity`, then creates a "Scrcpy App Launcher" entry in your application launcher.
 
 ### Windows 11
 
@@ -40,7 +39,7 @@ If PowerShell blocks the script from running, either run it from a shell started
 `powershell -ExecutionPolicy Bypass` or allow local scripts for your user with
 `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`.
 
-This checks for `scrcpy` and `adb` on your `PATH`, then adds a "Scrcpy Manga-Shows" shortcut to your Start Menu (it runs the menu without flashing a console window).
+This checks for `scrcpy` and `adb` on your `PATH`, then adds a "Scrcpy App Launcher" shortcut to your Start Menu (it runs the menu without flashing a console window).
 
 ## Configuration
 
@@ -81,7 +80,7 @@ The Linux menu also has a **"- Remove app..."** entry. Picking it shows your cur
 
 ## Usage
 
-Launch "Scrcpy Manga/Shows" (Linux) or "Scrcpy Manga-Shows" (Windows) from your app launcher / Start Menu, pick Manga or Shows, and scrcpy opens the virtual display with the app already running on it.
+Launch "Scrcpy App Launcher" from your app launcher (Linux) or Start Menu (Windows), pick a mode, and scrcpy opens the virtual display with the app already running on it.
 
 ## Troubleshooting
 
@@ -93,4 +92,4 @@ Launch "Scrcpy Manga/Shows" (Linux) or "Scrcpy Manga-Shows" (Windows) from your 
 ## Uninstall
 
 - **Linux:** `rm ~/.local/share/applications/scrcpy-menu.desktop`
-- **Windows:** delete the "Scrcpy Manga-Shows" shortcut from the Start Menu (`shell:programs`)
+- **Windows:** delete the "Scrcpy App Launcher" shortcut from the Start Menu (`shell:programs`)
