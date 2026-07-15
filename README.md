@@ -4,7 +4,7 @@ A tiny menu launcher for [scrcpy](https://github.com/Genymobile/scrcpy) that ope
 
 Pick a mode from a popup menu, built from a `profiles.conf` file you can freely edit — add as many entries as you like, each with its own resolution and app to auto-launch. Ships with one example profile:
 
-- **Manga** — opens a 720x1440 portrait virtual display and launches YouTube
+- **Youtube** — opens a 720x1440 portrait virtual display and launches YouTube
 
 Available for both Linux and Windows 11.
 
@@ -50,7 +50,7 @@ Label|Resolution|Package
 ```
 
 ```
-Manga (720x1440 portrait)|720x1440/280|com.google.android.youtube
+Youtube (720x1440 portrait)|720x1440/280|com.google.android.youtube
 Shows (2560x1440 landscape)|2560x1440|com.netflix.mediaclient
 ```
 
