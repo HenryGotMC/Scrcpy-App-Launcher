@@ -1,4 +1,3 @@
-
 # Scrcpy Manga & Anime Launcher
 
 A tiny menu launcher for [scrcpy](https://github.com/Genymobile/scrcpy) that opens a secondary virtual display on your Android device at a preset resolution and automatically launches a manga or anime app into it.
