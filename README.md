@@ -90,6 +90,7 @@ Left-click acts as a normal touch/tap, and right-click is forwarded to the devic
 - **Device shows up in `lsusb` (Linux) but not in `adb devices`** — USB debugging isn't enabled/authorized on that device yet. On the device: enable Developer Options → USB debugging, replug the cable, and accept the "Allow USB debugging?" prompt on the device's screen.
 - **Windows: nothing happens when launching the shortcut** — run `windows\scrcpy-menu.ps1` directly in a PowerShell window (not via the shortcut) to see any error output.
 - **Linux: the menu fails instantly with "This option is not available"** — a label in `profiles.conf` starts with a `-`. Zenity's argument parser can mistake a leading dash for a command-line flag; avoid starting a profile label with `-` (a leading `+` or other characters are fine).
+- **Mouse does nothing in the virtual display, but keyboard shortcuts work** — the phone itself is locked/asleep. A key press wakes a locked Android device, but mouse movement or clicks alone don't, so the virtual display stays dozed and ignores pointer input. Wake/unlock the phone (press its power button, or send a key press through scrcpy) and interaction will resume.
 
 ## Uninstall
 
