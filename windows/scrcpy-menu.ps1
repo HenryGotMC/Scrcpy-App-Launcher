@@ -28,9 +28,13 @@ if ($profiles.Count -eq 0) {
     exit
 }
 
+$listBoxHeight = [Math]::Max(100, [Math]::Min(400, 20 * $profiles.Count + 40))
+$buttonHeight = 40
+$chromeHeight = 60
+
 $form = New-Object System.Windows.Forms.Form
 $form.Text = "scrcpy Launcher"
-$form.Size = New-Object System.Drawing.Size(320, ([Math]::Min(500, 130 + 20 * $profiles.Count)))
+$form.Size = New-Object System.Drawing.Size(320, ($listBoxHeight + $buttonHeight + $chromeHeight))
 $form.StartPosition = "CenterScreen"
 $form.Topmost = $true
 $form.FormBorderStyle = "FixedDialog"
@@ -42,11 +46,12 @@ foreach ($p in $profiles) {
 }
 $listBox.SetSelected(0, $true)
 $listBox.Dock = "Top"
-$listBox.Height = 200
+$listBox.Height = $listBoxHeight
 $form.Controls.Add($listBox)
 
 $okButton = New-Object System.Windows.Forms.Button
 $okButton.Text = "Launch"
+$okButton.Height = $buttonHeight
 $okButton.Dock = "Bottom"
 $okButton.DialogResult = [System.Windows.Forms.DialogResult]::OK
 $form.Controls.Add($okButton)

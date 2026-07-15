@@ -21,7 +21,7 @@ Available for both Linux and Windows 11.
 ### Linux
 
 ```bash
-git clone git@github.com:HenryGotMC/Scrcpy-App-Launcher.git
+git clone https://github.com/HenryGotMC/Scrcpy-App-Launcher.git
 cd Scrcpy-App-Launcher/linux
 ./install.sh
 ```
@@ -31,7 +31,7 @@ This checks for `scrcpy`, `adb`, and `zenity`, then creates a "Scrcpy Manga/Show
 ### Windows 11
 
 ```powershell
-git clone git@github.com:HenryGotMC/Scrcpy-App-Launcher.git
+git clone https://github.com/HenryGotMC/Scrcpy-App-Launcher.git
 cd Scrcpy-App-Launcher\windows
 .\install.ps1
 ```
