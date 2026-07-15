@@ -166,9 +166,9 @@ while true; do
       resolution="${resolutions[$i]}"
       app="${apps[$i]}"
       if [ -n "$app" ]; then
-        scrcpy --new-display="$resolution" --start-app=+"$app"
+        scrcpy --new-display="$resolution" --start-app=+"$app" --mouse-bind=+hsn
       else
-        scrcpy --new-display="$resolution"
+        scrcpy --new-display="$resolution" --mouse-bind=+hsn
       fi
       exit 0
     fi

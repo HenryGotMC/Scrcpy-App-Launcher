@@ -65,7 +65,7 @@ if ($result -ne [System.Windows.Forms.DialogResult]::OK -or $null -eq $listBox.S
 
 $selected = $profiles | Where-Object { $_.Label -eq $listBox.SelectedItem } | Select-Object -First 1
 
-$scrcpyArgs = @("--new-display=$($selected.Resolution)")
+$scrcpyArgs = @("--new-display=$($selected.Resolution)", "--mouse-bind=+hsn")
 if ($selected.App) {
     $scrcpyArgs += "--start-app=+$($selected.App)"
 }

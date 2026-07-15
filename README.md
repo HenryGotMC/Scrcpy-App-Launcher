@@ -82,6 +82,8 @@ The Linux menu also has a **"- Remove app..."** entry. Picking it shows your cur
 
 Launch "Scrcpy App Launcher" from your app launcher (Linux) or Start Menu (Windows), pick a mode, and scrcpy opens the virtual display with the app already running on it.
 
+Left-click acts as a normal touch/tap, and right-click is forwarded to the device as a real click (rather than triggering scrcpy's default Back gesture). To go back, use the keyboard shortcut `Alt+B` / `Alt+Backspace` (or `Super+B` / `Super+Backspace`) instead.
+
 ## Troubleshooting
 
 - **"Could not find any ADB device"** — run `adb devices -l`. If nothing is listed, check the USB cable (it must support data, not charge-only) and confirm USB debugging is enabled in the phone's Developer Options.
