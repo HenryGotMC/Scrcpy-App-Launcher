@@ -1,6 +1,6 @@
 # Scrcpy App Launcher
 
-A tiny menu launcher for [scrcpy](https://github.com/Genymobile/scrcpy) that opens a secondary virtual display on your Android device at a preset resolution and automatically launches a manga or anime app into it.
+A tiny menu launcher for [scrcpy](https://github.com/Genymobile/scrcpy) that opens a secondary virtual display on your Android device at a preset resolution and automatically launches a app into it.
 
 Pick a mode from a popup menu, built from a `profiles.conf` file you can freely edit — add as many entries as you like, each with its own resolution and app to auto-launch. Ships with one example profile:
 
